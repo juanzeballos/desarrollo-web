@@ -1,0 +1,28 @@
+<!--ejercio4:
+		solicitar 3 notas de ET y mostrar el promedio. 
+		promedio <=8  es candidato a la bandera.-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio 4 </title>
+</head>
+<body>
+	<script type="text/javascript">
+		var promedio=0;
+		var acumulador=0;
+		for( i = 0; i < 3; i++){
+			nota = parseFloat(prompt('Ingrese la nota', ''));
+			acumulador= nota + acumulador;	
+			promedio = acumulador / 3;	
+		}
+		document.write("El promedio de la nota es " +promedio + "<br>");
+
+		if (promedio >= 8 ) {
+			document.write("Es candidato a la bandera")	
+		}
+
+
+	</script>
+
+</body>
+</html>		

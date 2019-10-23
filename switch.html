@@ -1,0 +1,37 @@
+<!--
+	
+switch (opción múltiple)
+
+	Sintaxis
+		switch (variable)
+			{
+				case  valorVariable: sintaxis;
+					break;
+
+				case  valorVariable2: sintaxis;
+					break;
+				default : ;	
+			}
+-->
+Ejemplo :
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+
+var edad = 0;
+edad =parseInt(prompt('Ingrese edad'));
+switch (edad) {
+				case 0: alert("Acaba de nacer");
+					break;
+				case 18: alert("Es mayor de edad");
+					break;
+				case 65: alert("Edad de jubilarse");	
+					break;	
+				default:
+					alert("Su edad no es representativa")
+					break;
+			}			
+</script>
+</body>
+</html>			

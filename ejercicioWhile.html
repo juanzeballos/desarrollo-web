@@ -1,0 +1,56 @@
+<!-- 
+	Ingresar numero, nombre del cliente y saldo actual.
+	ngresar los datos, finaliza con numero negativo en la cuenta.
+	Mostrar los datos :
+	a. numero, nombre del cliente y estado del saldo, sabiendo que es saldo acreedor el que tiene 
+	 aporte >0, deudor <0, nulo=0
+	b. la suma total de los saldos acreedores. 
+
+	-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>While</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+
+		do{
+			
+				// statement
+			
+		
+		numero = parseInt(prompt('Ingresar numero de cuenta', ''));
+		if (isNaN(numero)) {
+			alert("No ingreso un numero")
+			numero = parseInt(prompt('Ingresar numero de cuenta', ''));
+		}
+			if (numero >=0) {
+		nombre = prompt('Ingresar nombre del cliente', '');
+		saldo = parseInt(prompt('Ingresar saldo actual', ''));
+		
+		var totalAcreedor = 0 ;
+		var estado = 0;
+
+
+		if (saldo > 0 ) {
+			estado = "acreedor";
+			totalAcreedor = totalAcreedor + saldo;
+		}
+		else if (saldo < 0 ) {
+			estado = "deudor";
+		}
+		else {
+			estado = "nulo";
+		}
+		document.write("El cliente "+ nombre + " numero: "+ numero + "<br> su estado es: "+ estado );
+		
+	} 
+	}
+	while (numero > 0)
+	document.write("<br> El saldo acreedor es: "+ totalAcreedor +"<br>");
+	</script>
+
+</body>
+</html>	

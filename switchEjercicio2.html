@@ -1,0 +1,49 @@
+<!--
+Solicitar el ingreso de las siguientes palabras:
+	casa, mesa, gato o perro
+Mostrar por pantalla la palabra ingresada traducida al ingles
+
+2.
+Solicitar el ingreso de los colores primarios:
+	rojo, azul y amarillo
+Mostrar lo ingresado. si no es primario mostrar el error.
+
+3.
+Confeccionar un programa que al cargarle una nota de parcial indique :
+	1 = no aprobo
+	2 = aprobo
+	3 = bueno
+	4 = Muy bueno
+	5 = Excelente
+-->	
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio 2</title>
+</head>
+<body>
+	<script>
+		var palabra= "0";
+		palabra= prompt('Ingrese la palabra', '');
+		switch (palabra) {
+			case 'casa':
+				alert("house");
+				break;
+			case 'mesa':
+				alert("table");
+				break;	
+			case 'perro':
+				alert("dog");
+				break;	
+			case 'gato':
+				alert("cat");
+				break;	
+			default:
+				alert("error")
+				break;
+		}
+	</script>
+
+</body>
+</html>

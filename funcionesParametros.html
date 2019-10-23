@@ -1,0 +1,28 @@
+<!--
+	Como las funciones tienen una entrada y una salida los parametros se 
+usan para enviar datos o valores a la funciones y con ellos
+se realizaran las acciones que esten dentro de la funcion.
+	Para incorporar un parametro en una funcion, hay que poner el nombre
+de la variable que almacenara el dato que se ingresara, por otro lado la variable tendra 
+vida durante la ejecucion de la funcion y dejara de existir cuando esta se 
+termine de ejecutar. Los parametros pueden ser de cualquier tipo
+-->	
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Parametros</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function alerta(nombre)
+		{
+			alert("Hola" + nombre);
+		}
+	</script>
+	<h1>Verifico</h1>
+	<script type="text/javascript">
+		var nombre=prompt('Ingrese nombre', '');
+		alert(nombre);
+	</script>
+</body>
+</html>

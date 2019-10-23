@@ -1,0 +1,31 @@
+<!--
+ejercicio 1:
+			
+			programa que lea 3 pares de datos cada
+			para corresponde a medida de la base y altura de un triangulo
+			Mostrar de cada triangulo, base, altura y superficie
+			la cantidad de triangulos : superficie > 12
+-->		
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio 1 </title>
+</head>
+<body>
+		<script type="text/javascript">
+			var contador = 0;
+			for( t = 0; t < 3; t++){
+				base=parseInt(prompt('Ingresar el valor de la base ', ''));
+				altura = prompt('Ingrese la altura', '');
+				var superficie = base * altura /2;
+				document.write("La base es:"+ base +"; la altura es: "+ altura + ", y la superficie "+ superficie+"<br>" );
+				if (superficie>12) {
+					contador = contador + 1
+				}
+
+			}
+			document.write("hay " + contador + "triangulos con superfice mayor a 12 ");
+		</script>
+</body>
+</html>		

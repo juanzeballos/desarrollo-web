@@ -1,0 +1,47 @@
+<!--
+Desarrollar un script donde trabajaremos con tipos de motores.
+Pedir al usuario que ingrese el tipo de motor(valores posibles 1.2.3.4)
+	dependiendo lo ingresado mostrar por pantalla los siguientes textos:
+
+	Tipo de motor = 0; mostrar (No hay establecido valor para este tipo) 
+				  = 1, mostrar (Motor de bomba de agua)
+				  = 2, mostrar (Motor bomba de gasolina)
+				  = 3, mostrar (Motor de hormigon)
+				  = 4, mostrar (Motor de bomba de pasta alimentaria)
+				  default, mostrar (No existe un valor valido para este tipo de bomba)
+
+-->
+
+<html>
+<head>
+	<title>Ejercicio 1</title>
+</head>
+<body>
+	<script>
+	var motor = 0;
+	motor =parseInt(prompt('Ingrese tipo de motor'));
+
+	switch (motor) {
+		case 0:
+			alert("No hay establecido valor para este tipo");
+			break;
+		case 1:
+			alert("Motor de bomba de agua");
+			break;	
+		case 2:
+			alert("Motor bomba de gasolina");
+			break;
+		case 3:
+			alert("Motor bomba de hormigon");	
+			break;	
+		case 4:
+			alert("Motor bomba de pasta alimentaria");	
+			break;
+		default:
+			alert("No existe un valor valido para este tipo de bomba")
+			break;
+	}
+
+	</script>
+</body>
+</html>				  
